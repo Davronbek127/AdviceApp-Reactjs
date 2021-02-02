@@ -1,0 +1,70 @@
+#root, html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.app {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./unnamed.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.card {
+    width: 40wh;
+    height: 25vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2%;
+    box-shadow: 10px 10px;
+
+}
+.heading {
+   display: flex;
+   align-items: center;
+   height: 500px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular';
+
+}
+button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 10vh;
+    width: 45wh;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+}
+button:hover {
+    background-color: aqua;
+    height: 11vh;
+    width: 50wh;
+}
+button:active{
+    background-color: chartreuse;
+}
+button::after {
+   background-color: gold;
+}
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 80%;
+        height: 30%;
+    }
+}
